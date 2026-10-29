@@ -4,12 +4,12 @@ import numpy as np
 import yaml
 
 
-class ExampleModel:
-    """Example model class."""
+class ParkingSpotModel:
+    """Model for detecting parking spots."""
 
     def __init__(self, root: str, model_config_path: str):
         """
-        Initializes the ExampleModel.
+        Initializes the ParkingSpotModel.
 
         Arguments:
             root -- Root path of the package
@@ -28,7 +28,7 @@ class ExampleModel:
         Returns:
             int: average of image with bias
         """
-        # Just some example calculation with the image
+        # TODO: Replace with the inference of the parking spot detection network
         return np.mean(image) + 42
 
     def _load_config(self, path: str) -> dict:

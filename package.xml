@@ -1,16 +1,20 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ros2_example_package</name>
+  <name>parking</name>
   <version>0.0.0</version>
-  <description>The ros2_example_package package</description>
+  <description>Detection of parking spots and parking maneuvers for the Smarty vehicle</description>
   <maintainer email="info@dhbw-smartrollerz.org">DHBW Smart Rollerz</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend>
   <depend>timing</depend>
   <depend>setup_utils</depend>
   <depend>smarty_utils</depend>
+  <depend>camera_preprocessing</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

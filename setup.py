@@ -3,7 +3,7 @@ import os
 from setup_utils import include_directory
 from setuptools import find_packages, setup
 
-package_name = "ros2_example_package"
+package_name = "parking"
 
 setup(
     name=package_name,
@@ -25,12 +25,12 @@ setup(
     zip_safe=True,
     maintainer="Smart Rollerz",
     maintainer_email="info@dhbw-smartrollerz.org",
-    description="TODO: Package description",
+    description="Detection of parking spots and parking maneuvers for the Smarty vehicle",
     license="TODO: License declaration",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            f"ros2_example_node = {package_name}.ros2_example_node:main",
+            f"parking_perception_node = {package_name}.parking_perception_node:main",
         ],
     },
 )

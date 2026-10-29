@@ -1,29 +1,36 @@
-# ROS2 Example Package
+# Parking
 
-[![Build](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/build.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/build.yaml) [![Test](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/test.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/test.yaml) [![Lint](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/lint.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/ros2_example_package/actions/workflows/lint.yaml)
+[![Build](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/build.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/build.yaml) [![Test](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/test.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/test.yaml) [![Lint](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/lint.yaml/badge.svg)](https://github.com/DHBW-Smart-Rollerz/parking/actions/workflows/lint.yaml)
 
-This repository contains an example package for ros2 (python).
+This package contains the AI-based parking spot detection of the Smarty vehicle. It replaces the classic detection in `parking_spot`.
 
 ## Usage
 
-This repository can be used as template. Simply select this repo when creating a new repository under template.
-
-After creating a repository from the template, rename `ros2_example_package` to your package name (folder, `resource/` file, `package.xml`, `setup.py`, `setup.cfg`) and set `package_name` in `.github/workflows/build.yaml` and `.github/workflows/test.yaml` to it as well. Otherwise the CI builds and tests the wrong package. Also replace `ros2_example_package` in the badge links at the top of this README.
-
-Alternatively, you can create python ros packages with:
+Build the package:
 
 ```bash
-# If not already created
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src
-
-# Create package
-ros2 pkg create my_package --build-type ament_python --dependencies rclpy
-
-# Build
-cd ~/ros2_ws/src
-colcon build --symlink-install --packages-select my_package
+colcon build --symlink-install --packages-select parking
 ```
+
+Start the parking perception:
+
+```bash
+ros2 launch parking parking_perception.launch.py
+```
+
+The following launch arguments exist:
+
+- `params_file`: Path to the ROS parameters file (default: `config/ros_params.yaml`).
+- `debug`: Enable debug mode to publish the debug image (default: `False`).
+
+## Settings
+
+The parameters of the `parking_perception_node` are defined in `config/ros_params.yaml`:
+
+- **model_config_path**: Path to the model configuration (default: `"config/model.yaml"`).
+- **image_subscriber**: Topic of the preprocessed camera image (default: `"/camera/image/undistorted"`).
+- **pose_subscriber**: Topic of the vehicle pose (default: `"/pose_estimation/pose"`).
+- **debug_image_publisher**: Topic of the debug image (default: `"/parking/debug_image"`).
 
 ## Structure
 
@@ -35,7 +42,7 @@ colcon build --symlink-install --packages-select my_package
 - `launch/`: Contains all launch files. Launch files can start multiple nodes with yaml-configurations
 - `models/`: Contains all models (optional) and only necessary for machine learning nodes
 - `resource/`: Contains the package name (required to build with colcon)
-- `ros2_example_package`: Contains all nodes and sources for the ros package
+- `parking`: Contains all nodes and sources for the ros package
 - `test/`: Contains all tests
 - `package.xml`: Contains metadata about the package
 - `setup.py`: Used for Python package configuration

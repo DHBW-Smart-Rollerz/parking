@@ -1,36 +1,42 @@
 import cv_bridge
+import geometry_msgs.msg
 import rclpy
 import sensor_msgs.msg
 from smarty_utils.enums import NodeState
 from smarty_utils.smarty_node import SmartyNode
 from timing import timer
 
-from ros2_example_package.example_model import model
+from parking.perception import model
 
 
-class ROS2ExampleNode(SmartyNode):
-    """ROS2 Example Node."""
+class ParkingPerceptionNode(SmartyNode):
+    """Detects parking spots in the camera image."""
 
     def __init__(self):
-        """Initialize the ROS2ExampleNode."""
+        """Initialize the ParkingPerceptionNode."""
         super().__init__(
-            "ros2_example_node",
-            "ros2_example_package",
+            "parking_perception_node",
+            "parking",
             node_parameters={
                 # Subscriber topics
-                "image_subscriber": "/camera/undistorted",
+                "image_subscriber": "/camera/image/undistorted",
+                "pose_subscriber": "/pose_estimation/pose",
                 # Publisher topics
-                "debug_image_publisher": "/ros2_example_node/debug_image",
+                "debug_image_publisher": "/parking/debug_image",
                 # Parameters
                 "model_config_path": "config/model.yaml",
                 "state": NodeState.ACTIVE.value,
-                "example_value": 123,
                 "debug": False,
             },
             subscribed_topics={
                 "image_subscriber": (
                     sensor_msgs.msg.Image,
                     self.image_callback,
+                    1,
+                ),
+                "pose_subscriber": (
+                    geometry_msgs.msg.Pose,
+                    self.pose_callback,
                     1,
                 ),
             },
@@ -44,29 +50,30 @@ class ROS2ExampleNode(SmartyNode):
 
         # Create required objects
         self.cv_bridge = cv_bridge.CvBridge()
+        self.latest_pose: geometry_msgs.msg.Pose | None = None
 
-        self.model = model.ExampleModel(
+        self.model = model.ParkingSpotModel(
             root=self.package_path, model_config_path=self.model_config_path
         )
 
-        self.get_logger().info("ROS2ExampleNode initialized")
+        self.get_logger().info("ParkingPerceptionNode initialized")
 
     @property
     def model_config_path(self) -> str:
         """Return the model config path."""
         return self.get_parameter("model_config_path").value  # type: ignore
 
-    @property
-    def example_value(self) -> int:
-        """Return an example value for debug image generation."""
-        return self.get_parameter("example_value").value  # type: ignore
-
     def _reset(self) -> None:
         """Reset the node to its initial state."""
         del self.model
-        self.model = model.ExampleModel(
+        self.latest_pose = None
+        self.model = model.ParkingSpotModel(
             root=self.package_path, model_config_path=self.model_config_path
         )
+
+    def pose_callback(self, msg: geometry_msgs.msg.Pose):
+        """Store the latest vehicle pose from the pose estimation."""
+        self.latest_pose = msg
 
     def image_callback(self, msg: sensor_msgs.msg.Image):
         """Executed by the ROS2 system whenever a new image is received."""
@@ -90,18 +97,16 @@ class ROS2ExampleNode(SmartyNode):
             result = self.model.predict(image)
 
         with timer.Timer(name="publish", filter_strength=40):
-            # Publish the result as the custom ROS2 message defined in this package
-            print(f"Prediction result: {result}")
+            # TODO: Publish the detected parking spots (parking_msgs/ParkingSpotArray)
+            self.get_logger().debug(f"Prediction result: {result}")
 
         if self._debug:
             with timer.Timer(name="debug", filter_strength=40):
-                # Create the debug image. Here it is just the image filled with
-                # the example value.
+                # TODO: Draw the detected parking spots into the debug image
                 debug_image = image.copy()
-                debug_image.fill(self.example_value)
 
                 self.debug_image_publisher.publish(  # type: ignore
-                    self.cv_bridge.cv2_to_imgmsg(image, encoding="8UC1")
+                    self.cv_bridge.cv2_to_imgmsg(debug_image, encoding="8UC1")
                 )
 
         timer.Timer(logger=self.get_logger().info).print()  # type: ignore
@@ -109,13 +114,13 @@ class ROS2ExampleNode(SmartyNode):
 
 def main(args=None):
     """
-    Main function to start the LaneDetectionNode.
+    Main function to start the ParkingPerceptionNode.
 
     Keyword Arguments:
         args -- Launch arguments (default: {None})
     """
     rclpy.init(args=args)
-    node = ROS2ExampleNode()
+    node = ParkingPerceptionNode()
 
     # We have 2 options on how to run the node:
     # 1. Let the node idle in the background with 'rclpy.spin(node)' if we want to let
