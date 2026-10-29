@@ -5,6 +5,7 @@ import sensor_msgs.msg
 from camera_preprocessing.transformation.coordinate_transform import (
     CoordinateTransform,
 )
+from rclpy.executors import ExternalShutdownException
 from smarty_utils.enums import NodeState
 from smarty_utils.smarty_node import SmartyNode
 from timing import timer
@@ -164,7 +165,7 @@ def main(args: list[str] | None = None) -> None:
         else:
             rclpy.spin(node)
 
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, ExternalShutdownException):
         pass
 
     finally:
