@@ -160,3 +160,18 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Training data (extracted frames, CVAT uploads and exports)
+/data/
+
+# Rosbags and archives (e.g. CVAT exports), if copied into the package
+*.mcap
+*.db3
+*.zip
+
+# Training artifacts: only the trained model in models/ is versioned
+*.pt
+*.pth
+*.onnx
+!/models/*.pt
+!/models/*.onnx

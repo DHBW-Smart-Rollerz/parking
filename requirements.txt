@@ -1,3 +1,5 @@
 numpy
 opencv_python
+pyyaml
 rclpy
+torch

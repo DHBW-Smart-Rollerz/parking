@@ -1,4 +1,15 @@
 # Config of the model. Independent of the ROS system.
 
-model_path: 'models/model.pkl'
-# ...
+# Trained network (checkpoint of notebooks/train_parking_net.ipynb), relative to the
+# package share directory. Classes and input size are stored in the checkpoint.
+model_path: 'models/parking_net.pt'
+
+# Minimum score of a detected parking spot [0, 1]
+score_threshold: 0.3
+
+# Geometry of a parking spot in mm (values of the real track, simulation see comments)
+parking_spot:
+  short_side: 380 # 300 in the simulation
+  long_side: 490
+  length_tolerance: 0.10 # 0.15 in the simulation
+  angle_tolerance: 20 # deg

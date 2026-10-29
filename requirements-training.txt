@@ -1,0 +1,4 @@
+# Additional dependencies of the training notebook (not needed on the vehicle)
+jupyter
+matplotlib
+tqdm

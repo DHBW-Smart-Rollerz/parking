@@ -20,6 +20,10 @@ setup(
             install_path=os.path.join("share", package_name, "launch"),
             source_path="launch",
         ),
+        *include_directory(
+            install_path=os.path.join("share", package_name, "models"),
+            source_path="models",
+        ),
     ],
     install_requires=["setuptools"],
     zip_safe=True,

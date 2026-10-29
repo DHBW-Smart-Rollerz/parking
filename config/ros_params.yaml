@@ -4,8 +4,12 @@ parking_perception_node:
     # Path of the model config (relative to the package share directory)
     model_config_path: "config/model.yaml"
 
+    # true: image_subscriber is the bird's eye view (/camera/image/bev)
+    # false: image_subscriber is the undistorted image (/camera/image/undistorted)
+    birds_eye: true
+
     # Subscriber topics
-    image_subscriber: "/camera/image/undistorted"
+    image_subscriber: "/camera/image/bev"
     pose_subscriber: "/pose_estimation/pose"
 
     # Publisher topics
