@@ -175,3 +175,7 @@ cython_debug/
 *.onnx
 !/models/*.pt
 !/models/*.onnx
+
+# Ultralytics training runs (best.pt is copied to models/yolo_pose.pt)
+/runs/
+/notebooks/runs/

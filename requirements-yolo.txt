@@ -1,0 +1,3 @@
+# YOLO pose detector (detector: 'yolo_pose' in config/model.yaml).
+# Install without -U, otherwise numpy may be updated to 2.x, which breaks cv_bridge.
+ultralytics>=8.3

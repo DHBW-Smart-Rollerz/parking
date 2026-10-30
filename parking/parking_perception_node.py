@@ -61,7 +61,7 @@ class ParkingPerceptionNode(SmartyNode):
         # calibration (calib.bin) of the camera_preprocessing package.
         self.transform = CoordinateTransform(debug=self._debug)
 
-        self.model = model.ParkingSpotModel(
+        self.model = model.create_model(
             root=self.package_path,
             model_config_path=self.model_config_path,
             transform=self.transform,
@@ -84,7 +84,7 @@ class ParkingPerceptionNode(SmartyNode):
         """Reset the node to its initial state."""
         del self.model
         self.latest_pose = None
-        self.model = model.ParkingSpotModel(
+        self.model = model.create_model(
             root=self.package_path,
             model_config_path=self.model_config_path,
             transform=self.transform,

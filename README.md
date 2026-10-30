@@ -51,11 +51,17 @@ Workflow:
    python3 src/parking/tools/extract_frames.py <bag> src/parking/data/frames --every 5
    ```
 
-2. **Annotate** the frames in CVAT: one polygon with four points per parking spot, label `free`, `occupied` or `blocked`, points ordered front-left, front-right, back-right, back-left (seen from the vehicle driving into the spot). Export as "CVAT for images 1.1" with images to `data/dataset_v1/`.
+2. **Annotate** the frames in CVAT: one polygon with four points per parking spot, the label is the class (e.g. `Parking_90_free`). The order of the points does not matter, they are sorted into bottom-left, bottom-right, top-right, top-left when loading. Export as "CVAT for images 1.1" with images to `data/dataset_v1/`.
 
 3. **Train** with `notebooks/train_parking_net.ipynb` (dependencies: `pip install -r requirements-training.txt`). The best model is saved to `models/parking_net.pt`.
 
 4. **Build** the package again (`colcon build --packages-select parking`), so the model is installed, and start the node.
+
+### Alternative: YOLO pose
+
+`notebooks/train_yolo_pose.ipynb` trains a YOLO pose network of [Ultralytics](https://docs.ultralytics.com/tasks/pose/) on the same CVAT annotations: every parking spot is one object with its four corners as keypoints. The notebook exports the annotations to `data/yolo/<dataset>/`, trains (runs in `runs/pose/`) and copies the best model to `models/yolo_pose.pt`.
+
+The detector of the node is selected in `config/model.yaml` (`detector: 'parking_net'` or `'yolo_pose'`). Dependencies: `pip install -r requirements-yolo.txt` (without `-U`, numpy 2.x breaks `cv_bridge`). For pre-annotation in CVAT use `tools/cvat_function_yolo.py` instead of `tools/cvat_function.py`.
 
 `pip install torch` installs the CUDA version (several GB). Without an NVIDIA GPU use `pip install torch --index-url https://download.pytorch.org/whl/cpu`.
 
@@ -63,7 +69,7 @@ Workflow:
 
 The parameters of the `parking_perception_node` are defined in `config/ros_params.yaml`:
 
-- **model_config_path**: Path to the model configuration (default: `"config/model.yaml"`).
+- **model_config_path**: Path to the model configuration incl. the selected detector (default: `"config/model.yaml"`).
 - **birds_eye**: `true` if `image_subscriber` is the bird's eye view, `false` for the undistorted image (default: `true`).
 - **image_subscriber**: Topic of the preprocessed camera image (default: `"/camera/image/bev"`, undistorted: `"/camera/image/undistorted"`).
 - **pose_subscriber**: Topic of the vehicle pose (default: `"/pose_estimation/pose"`).

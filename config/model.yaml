@@ -1,8 +1,17 @@
 # Config of the model. Independent of the ROS system.
 
-# Trained network (checkpoint of notebooks/train_parking_net.ipynb), relative to the
-# package share directory. Classes and input size are stored in the checkpoint.
-model_path: 'models/parking_net.pt'
+# Detector of the parking spots:
+#   'parking_net': own CenterNet-style network (notebooks/train_parking_net.ipynb)
+#   'yolo_pose':   YOLO pose network of Ultralytics (notebooks/train_yolo_pose.ipynb)
+detector: 'yolo_pose'
+
+# Trained networks, relative to the package share directory. The classes are stored
+# in the model files.
+parking_net:
+  model_path: 'models/parking_net.pt' # Input size is stored in the checkpoint
+yolo_pose:
+  model_path: 'models/yolo_pose.pt'
+  image_size: 640 # Same as imgsz of the training
 
 # Minimum score of a detected parking spot [0, 1]
 score_threshold: 0.3
