@@ -165,6 +165,7 @@ cython_debug/
 # datasets used for training are versioned, so they can be cloned on other machines.
 /data/*
 !/data/dataset_v4/
+!/data/dataset_v5/
 
 # Rosbags and archives (e.g. CVAT exports), if copied into the package
 *.mcap

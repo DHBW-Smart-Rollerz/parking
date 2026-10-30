@@ -264,7 +264,7 @@ src/parking/data/dataset_v4/
     └── ...
 ```
 
-Im Notebook stellst du den Datensatz über `DATA_DIR = PACKAGE_DIR / "data" / "dataset_v4"` ein.
+Im ParkingNet-Notebook stellst du den Datensatz über `DATA_DIR = PACKAGE_DIR / "data" / "dataset_v4"` ein. Das YOLO-Notebook kombiniert mehrere Datensätze über die Liste `DATA_DIRS` (aktuell `dataset_v4` und `dataset_v5`). Dasselbe Bild darf dabei nicht in zwei Datensätzen vorkommen.
 
 ### Datensatz prüfen
 
@@ -330,7 +330,8 @@ Auf der CPU dauert das deutlich länger als beim ParkingNet, etwa eine Stunde f�
 
 - **Nach Änderungen an Code oder Daten** den Kernel neu starten und alles neu ausführen: oben **Restart**, dann **Run All**. Ein laufender Kernel behält einmal importierten Code. Ein Modell kann sonst unbemerkt mit alten Daten trainiert werden.
 - Wurde ein Notebook außerhalb von VS Code geändert, schließt du den Tab ohne zu speichern („Don't Save“) und öffnest ihn neu.
-- Die Validierung besteht aus ganzen Bags. Gibt es nur einen Bag, wird zufällig aufgeteilt, und die Validierungswerte sind dann zu optimistisch.
+- ParkingNet-Notebook: Die Validierung besteht aus ganzen Bags. Gibt es nur einen Bag, wird zufällig aufgeteilt, und die Validierungswerte sind dann zu optimistisch.
+- YOLO-Notebook: Jeder Bag wird in Blöcke aus 10 aufeinanderfolgenden Bildern geteilt, etwa 20 % der Blöcke **jedes** Bags gehen in die Validierung. So sind alle Bags und Manöver (Vorbeifahren, Einparken) in Training und Validierung vertreten.
 
 ---
 
@@ -385,7 +386,7 @@ Diese Dateien landen in Git:
 - die Configs
 - die trainierten Modelle in `models/` (`parking_net.pt`, `yolo_pose.pt`)
 
-- der bereinigte Datensatz `data/dataset_v4/` (Bilder + `annotations.xml`), damit er auf anderen Rechnern (z. B. zum Training auf einem Mac) mitgeklont wird
+- die bereinigten Datensätze `data/dataset_v4/` und `data/dataset_v5/` (Bilder + `annotations.xml`), damit er auf anderen Rechnern (z. B. zum Training auf einem Mac) mitgeklont wird
 
 Einen neuen Datensatz nimmst du mit einer weiteren Zeile `!/data/dataset_vN/` in der `.gitignore` auf. Nimm nur fertige, bereinigte Datensätze auf, jede Version bleibt dauerhaft in der Git-Historie.
 

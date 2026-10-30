@@ -136,6 +136,40 @@ def bag_name(sample: Sample) -> str:
     return sample.image_path.stem.rsplit("_", 1)[0]
 
 
+def split_by_blocks(
+    samples: list[Sample], val_fraction: float, block_size: int, seed: int
+) -> tuple[list[Sample], list[Sample]]:
+    """Splits the images into training and validation in blocks of consecutive frames.
+
+    Consecutive frames of a rosbag are almost identical, a random split per image
+    would put nearly the same image into training and validation. Whole rosbags as
+    validation only work with many rosbags. Therefore every rosbag is cut into blocks
+    of consecutive frames and a random part of the blocks of every rosbag is used for
+    the validation, so all rosbags (and maneuvers) are in both sets.
+
+    Args:
+        samples: Annotated images of extract_frames.py
+        val_fraction: Part of the blocks of every rosbag used for the validation
+        block_size: Number of consecutive images per block
+        seed: Seed of the random selection
+
+    Returns:
+        Training and validation images
+    """
+    rng = np.random.default_rng(seed)
+    train, val = [], []
+    for bag in sorted({bag_name(s) for s in samples}):
+        frames = sorted(
+            (s for s in samples if bag_name(s) == bag), key=lambda s: s.image_path.stem
+        )
+        blocks = [frames[i : i + block_size] for i in range(0, len(frames), block_size)]
+        num_val = max(1, round(val_fraction * len(blocks)))
+        val_blocks = set(rng.choice(len(blocks), num_val, replace=False).tolist())
+        for index, block in enumerate(blocks):
+            (val if index in val_blocks else train).extend(block)
+    return train, val
+
+
 def draw_gaussian(heatmap: np.ndarray, center: tuple[int, int], sigma: float) -> None:
     """Draws a gaussian peak into the heatmap (keeps the maximum of overlaps).
 
