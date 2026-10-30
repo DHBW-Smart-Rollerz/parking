@@ -385,14 +385,16 @@ Diese Dateien landen in Git:
 - die Configs
 - die trainierten Modelle in `models/` (`parking_net.pt`, `yolo_pose.pt`)
 
+- der bereinigte Datensatz `data/dataset_v4/` (Bilder + `annotations.xml`), damit er auf anderen Rechnern (z. B. zum Training auf einem Mac) mitgeklont wird
+
+Einen neuen Datensatz nimmst du mit einer weiteren Zeile `!/data/dataset_vN/` in der `.gitignore` auf. Nimm nur fertige, bereinigte Datensätze auf, jede Version bleibt dauerhaft in der Git-Historie.
+
 Diese Dateien sind per `.gitignore` ausgeschlossen:
-- `data/`: Frames, Datensätze, CVAT-Exporte, YOLO-Export
+- der Rest von `data/`: Frames, ältere Datensätze, CVAT-Uploads, YOLO-Export
 - `runs/`: Trainingsläufe von Ultralytics
 - Rosbags (`*.mcap`, `*.db3`)
 - ZIP-Dateien
 - `.pt`-, `.pth`- und `.onnx`-Dateien außerhalb von `models/`
-
-Die Trainingsdaten müssen deshalb anders geteilt werden, z. B. über einen gemeinsamen Speicher oder den CVAT-Export.
 
 Branches:
 - `MNIST/Model`: ParkingNet
