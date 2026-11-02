@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>6</id>
+      <name>annotation_v3</name>
+      <size>213</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-11-02 08:43:31.444758+00:00</created>
+      <updated>2026-11-02 13:04:52.029896+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>212</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>6</id>
+          <start>0</start>
+          <stop>212</stop>
+          <url>http://localhost:8080/api/tasks/6/dataset/export/api/jobs/6</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>Ruven</username>
+        <email>braun.ruven@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Parking_90_free</name>
+          <color>#cc45d4</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Parking_90_besetzt</name>
+          <color>#c4f401</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Parking_90_gesperrt</name>
+          <color>#b5d8f9</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Parking_Parallel_Frei</name>
+          <color>#030094</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Parking_Parallel_Besetzt</name>
+          <color>#621599</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Parking_Parallel_Gesperrt</name>
+          <color>#b36cd8</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-11-02 13:05:13.843427+00:00</dumped>
+  </meta>
+  <image id="0" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000000.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="649.89,225.91;507.10,414.88;472.67,0.81;631.41,4.17" z_order="0">
+    </polygon>
+  </image>
+  <image id="1" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000005.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="649.40,228.91;507.22,416.09;472.30,1.06;631.16,4.18" z_order="0">
+    </polygon>
+  </image>
+  <image id="2" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000010.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="648.92,231.90;507.33,417.29;471.93,1.30;630.92,4.18" z_order="0">
+    </polygon>
+  </image>
+  <image id="3" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000015.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="648.43,234.90;507.44,418.49;471.57,1.54;630.68,4.19" z_order="0">
+    </polygon>
+  </image>
+  <image id="4" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000020.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="647.95,237.90;507.56,419.69;471.20,1.78;630.43,4.19" z_order="0">
+    </polygon>
+  </image>
+  <image id="5" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000025.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="647.47,240.90;507.67,420.90;470.83,2.02;630.19,4.19" z_order="0">
+    </polygon>
+  </image>
+  <image id="6" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000030.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.98,243.90;507.79,422.10;470.47,2.26;629.94,4.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="7" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000035.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.50,246.90;507.90,423.30;470.10,2.50;629.70,4.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="8" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000040.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.50,246.90;507.10,437.60;470.10,2.50;629.70,4.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="9" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000045.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.50,261.20;507.10,446.00;470.10,2.50;629.70,4.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="10" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000050.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.10,276.30;506.30,457.80;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="11" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000055.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.50,297.30;509.70,478.00;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="12" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000060.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="646.50,320.00;508.00,507.40;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="13" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000065.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,91.20;96.40,115.10;92.19,0.31;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="645.70,341.80;507.20,523.40;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="14" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000070.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,127.30;108.90,142.80;89.70,2.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="649.90,357.80;509.70,543.60;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="15" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000075.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,152.40;102.90,162.40;83.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="648.20,376.30;508.00,562.10;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="16" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000080.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,171.30;107.40,188.40;82.60,1.70;0.00,0.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="644.90,395.60;509.70,581.40;467.60,9.20;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="17" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000085.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,196.00;110.76,216.43;83.00,0.00;0.00,4.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="647.40,419.10;510.50,600.70;460.90,0.00;627.20,0.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="18" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000090.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,228.00;113.90,241.50;82.20,0.70;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="647.40,419.10;510.50,620.90;460.90,0.00;624.70,29.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="19" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000095.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.21,240.66;111.10,263.00;73.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="647.40,419.10;509.70,639.40;461.70,16.80;628.90,58.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="20" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000100.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,274.60;117.60,291.20;81.70,40.30;0.00,17.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;509.70,639.40;463.40,42.80;629.70,85.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,30.50;78.80,52.00;74.56,1.65;0.00,2.47" z_order="0">
+    </polygon>
+  </image>
+  <image id="21" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000105.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,301.30;116.60,320.40;83.40,70.40;0.00,43.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;509.70,639.40;465.90,70.50;631.40,101.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,59.90;78.00,82.20;74.56,1.65;0.00,2.47" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="460.07,63.81;630.57,97.40;627.62,0.00;456.68,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="22" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000110.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="464.50,73.90;632.20,114.80;629.20,2.60;458.96,4.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,319.00;119.20,343.50;84.60,94.40;0.00,70.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;509.70,639.40;464.20,89.00;632.20,122.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,84.30;80.50,102.40;74.56,1.65;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="23" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000115.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="2.74,331.23;116.40,361.30;79.30,123.50;0.00,97.14" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="469.80,106.70;631.00,140.40;628.80,2.60;458.60,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;503.80,640.00;465.90,110.80;633.00,145.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,117.90;84.70,131.80;74.56,1.65;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="24" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000120.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="467.30,117.20;638.20,154.40;632.10,0.00;457.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,350.57;121.25,386.44;85.10,149.40;0.00,125.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;503.80,640.00;465.90,125.10;634.70,161.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,137.20;82.20,160.40;58.60,0.80;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="25" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000125.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,341.25;119.32,385.69;87.80,183.20;0.00,161.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="473.70,150.60;637.80,188.20;635.20,1.10;463.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="643.20,425.00;503.80,640.00;470.90,154.50;636.40,190.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,172.50;88.10,197.40;58.60,0.80;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="26" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000130.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,340.29;116.90,382.30;93.80,209.90;0.00,193.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="640.70,430.00;503.00,640.00;476.80,187.30;639.80,219.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,217.90;94.00,224.30;65.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="473.51,182.23;638.97,215.83;637.40,0.00;466.04,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="27" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000135.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="498.30,640.00;642.70,430.50;645.60,236.90;479.90,211.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,246.80;104.00,263.20;65.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="480.00,209.90;644.90,237.00;645.00,0.00;468.80,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,222.00;104.10,245.00;124.82,402.50;0.00,383.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="28" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000140.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="499.80,640.00;642.30,434.00;648.00,268.40;482.70,245.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,275.10;110.50,294.40;76.90,27.60;0.00,2.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="483.60,241.80;649.30,266.80;646.50,0.00;473.20,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="29" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000145.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="493.20,635.40;640.70,442.00;642.00,313.40;486.60,291.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,309.90;117.80,322.70;87.10,66.10;0.00,43.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="484.30,286.80;643.50,307.50;646.50,0.00;473.20,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="30" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000150.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="497.85,578.82;645.30,462.50;647.00,336.70;491.80,319.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,335.10;122.80,362.20;100.50,108.90;0.00,78.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="490.20,312.80;647.70,332.70;646.50,0.00;480.80,2.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,99.79;97.49,128.73;90.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="31" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000155.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="500.40,640.00;646.50,461.40;650.60,353.00;493.60,344.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;128.70,388.20;110.60,143.30;0.00,114.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="491.00,338.00;648.50,348.70;646.50,0.00;480.80,2.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,141.80;110.10,169.90;90.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="32" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000160.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="496.20,365.90;646.67,384.46;658.93,0.00;491.39,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;128.70,388.20;114.80,180.30;0.00,149.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,174.60;120.20,196.80;100.00,0.80;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="492.24,370.62;650.14,390.78;649.30,462.17;501.30,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="33" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000165.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,213.50;128.60,240.50;109.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;137.10,402.50;124.00,216.40;0.00,182.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="493.90,395.80;651.00,413.50;648.50,467.20;501.30,640.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="496.44,390.78;650.14,410.94;656.00,0.00;491.40,0.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="34" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000170.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="3.22,222.32;124.98,247.52;113.90,11.00;0.00,0.77" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="496.50,415.30;650.90,434.70;660.10,0.00;495.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;137.10,402.50;128.20,248.30;0.00,210.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="497.30,420.20;648.50,437.00;647.70,500.80;501.30,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="35" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000175.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="496.50,442.60;655.20,463.80;665.70,30.20;503.30,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,269.70;138.00,299.90;124.60,57.90;0.00,26.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;143.80,415.10;139.10,275.20;0.80,247.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="499.00,447.10;654.40,472.30;654.40,517.60;501.30,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="36" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000180.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="5.07,282.86;139.03,324.71;131.10,77.40;0.00,41.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="498.40,465.20;654.60,487.20;666.30,70.10;501.00,25.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,362.80;143.80,415.10;139.10,302.10;0.00,261.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="505.68,28.78;661.06,79.18;666.87,0.00;502.80,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="37" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000185.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,314.20;148.50,353.00;138.80,114.10;0.00,75.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="504.40,490.70;652.30,508.00;671.00,113.10;511.70,59.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,396.40;149.70,433.60;151.70,334.90;0.00,296.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="508.20,56.50;668.60,114.50;673.60,0.80;510.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,98.77;140.32,136.29;141.05,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="38" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000190.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="512.10,81.50;673.80,131.40;679.40,0.30;517.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="504.00,516.10;660.00,531.00;674.20,130.90;512.50,85.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="0.00,396.40;150.50,434.40;153.40,356.80;0.00,321.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,125.60;146.20,162.30;141.05,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,349.41;152.08,372.30;142.84,141.33;0.00,95.77" z_order="0">
+    </polygon>
+  </image>
+  <image id="39" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000195.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,162.80;156.70,201.10;153.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="516.20,106.80;679.50,153.20;688.00,4.90;520.26,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,377.60;158.40,403.70;157.30,175.20;0.00,132.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="518.85,114.49;679.19,160.16;651.01,565.40;503.30,542.07" z_order="0">
+    </polygon>
+  </image>
+  <image id="40" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000200.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,181.10;158.50,226.60;155.40,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="520.70,146.00;678.60,190.00;691.90,5.10;523.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,395.10;158.40,432.90;154.40,199.50;0.00,153.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="521.70,148.50;677.30,197.10;659.80,578.00;506.20,563.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="41" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000205.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="525.20,163.00;683.20,215.70;696.88,0.00;532.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,395.10;158.40,432.90;164.10,235.50;0.00,178.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="525.60,174.70;681.20,221.40;656.90,602.30;504.30,587.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,206.35;162.20,247.82;163.18,16.53;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="42" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000210.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,224.50;165.70,272.00;174.70,32.00;34.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="507.76,622.19;658.00,622.00;686.10,240.50;531.40,186.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,395.10;162.30,449.40;164.10,246.20;0.00,197.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="530.85,171.84;681.52,232.56;700.29,0.00;535.58,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="43" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000215.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="512.00,628.20;660.90,622.60;695.30,269.30;538.50,216.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,253.50;179.70,306.00;187.00,73.50;8.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="538.90,207.70;692.90,260.30;717.60,1.80;552.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,395.10;179.20,462.90;185.50,281.10;0.00,225.10" z_order="0">
+    </polygon>
+  </image>
+  <image id="44" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000220.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="515.88,632.79;656.64,637.94;699.90,311.90;553.80,259.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="semi-auto" occluded="0" points="0.00,255.40;200.70,323.40;214.50,97.90;2.23,3.72" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="554.10,247.50;702.10,305.20;742.30,0.00;580.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,395.10;187.10,492.10;197.90,298.00;0.00,233.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="45" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000225.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="571.40,269.50;724.50,332.20;775.22,0.00;606.28,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="517.80,637.70;677.30,634.30;731.30,348.50;568.40,283.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,421.00;195.00,511.20;219.30,320.50;0.00,237.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,264.18;211.53,339.37;238.51,117.87;0.00,11.75" z_order="0">
+    </polygon>
+  </image>
+  <image id="46" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000230.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="583.00,318.70;735.40,362.60;800.00,27.90;643.36,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="537.40,578.00;680.30,591.00;727.00,379.90;582.40,328.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,421.00;206.20,535.90;248.50,338.50;0.00,237.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,264.18;239.60,355.10;283.50,140.40;0.00,11.75" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="-0.00,71.37;266.62,160.59;307.03,0.00;-0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="47" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000235.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,421.00;216.30,564.00;275.50,352.00;0.00,211.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,247.30;264.30,367.50;321.70,160.60;0.00,11.75" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="7.90,43.30;312.70,179.70;364.40,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="48" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000240.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,421.00;230.90,562.90;302.50,367.70;0.00,179.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,204.60;292.40,378.70;371.20,194.30;51.70,34.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="40.50,36.60;356.60,214.60;427.40,16.90;369.90,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="49" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000245.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,323.20;243.30,571.90;336.20,389.10;41.60,179.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="33.70,202.40;325.00,403.40;407.20,230.30;120.30,51.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="102.30,40.00;399.30,250.60;487.00,76.50;390.10,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="50" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000250.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="5.60,331.10;253.40,579.80;358.70,411.60;103.40,188.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="86.50,204.60;349.70,423.60;447.70,266.30;195.70,53.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="172.00,63.60;435.30,276.50;527.50,128.20;404.70,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="51" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000255.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="37.10,345.70;277.00,582.00;385.70,433.00;149.50,199.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="148.30,215.80;371.10,442.70;482.50,302.30;248.50,80.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="235.00,97.30;470.20,320.40;569.10,183.30;420.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="400.31,0.00;548.84,193.20;650.04,66.15;615.93,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="52" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000260.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="680.10,147.60;784.70,34.90;758.70,0.00;589.60,3.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="58.50,352.40;284.90,591.00;410.40,456.60;199.00,207.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="184.30,219.20;394.70,466.30;512.90,340.50;310.30,100.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="284.50,118.70;503.90,351.90;604.00,238.40;442.90,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="422.80,11.20;589.30,257.30;690.50,132.50;615.93,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="53" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000265.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="88.90,349.00;297.30,602.20;426.10,479.10;241.70,219.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="222.50,228.20;411.60,488.80;533.10,370.90;353.00,135.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="336.20,132.20;524.10,383.40;634.40,280.00;481.10,16.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="464.40,21.30;618.50,287.70;736.60,192.10;632.80,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="604.20,0.00;713.00,192.08;800.00,106.10;769.81,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="54" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000270.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="123.80,352.40;302.90,612.30;440.70,502.70;281.10,238.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="264.10,248.40;424.00,510.20;559.00,409.10;394.60,153.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="381.20,164.80;538.70,420.50;655.80,323.90;519.30,67.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="500.40,64.00;639.90,337.20;758.00,249.40;632.80,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="616.60,1.10;740.00,256.20;800.00,127.50;769.81,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="55" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000275.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="141.80,353.50;302.90,612.30;453.10,524.10;305.80,255.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="292.20,263.00;438.60,534.90;572.50,445.10;432.80,182.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="409.30,185.00;553.30,458.70;679.40,368.90;554.20,104.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="538.60,112.30;664.60,377.70;777.10,314.60;672.20,50.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="663.80,56.20;769.20,310.20;800.00,94.90;779.90,2.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="56" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000280.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="162.00,355.70;316.40,622.40;467.70,547.70;336.20,270.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="322.60,274.20;451.00,557.40;584.90,477.70;468.80,209.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="453.20,213.10;566.80,478.90;699.60,411.60;593.60,165.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="565.60,160.60;677.00,423.80;777.10,314.60;700.30,105.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="57" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000285.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="194.60,355.70;320.90,639.30;480.10,564.60;366.60,287.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="346.20,293.30;462.20,573.10;598.40,504.70;487.90,246.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="474.60,232.20;584.80,510.40;710.80,428.50;603.70,190.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="597.10,169.60;686.00,429.40;792.80,342.70;734.00,143.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="83.35,396.72;202.53,357.36;333.41,640.00;153.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="58" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000290.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="217.10,364.70;323.10,640.00;483.50,584.80;382.30,307.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="375.40,312.40;464.40,587.70;607.40,533.90;501.30,273.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="490.30,271.60;588.20,541.90;722.00,474.60;635.20,238.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="83.30,401.20;231.80,359.60;333.41,640.00;153.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="59" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000295.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="234.00,371.40;329.80,640.00;489.10,600.50;405.90,324.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="390.00,333.80;468.90,604.60;620.90,556.40;542.90,307.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="83.30,401.20;252.00,367.50;348.00,640.00;153.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="60" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000300.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="248.60,375.90;329.80,640.00;492.50,619.60;430.60,345.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="412.50,350.70;475.60,624.80;645.60,575.50;574.40,333.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="83.30,401.20;270.00,378.70;348.00,640.00;153.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="61" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000305.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="268.80,388.30;329.80,640.00;498.10,634.20;441.80,362.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="428.20,370.90;476.70,637.20;654.60,607.00;594.60,356.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="111.40,399.00;285.70,380.90;348.00,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="62" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000310.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="278.90,400.70;329.80,640.00;498.10,634.20;453.00,382.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="439.40,386.60;478.90,640.00;662.50,631.70;602.50,376.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="119.30,409.10;287.90,397.80;348.00,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="63" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000315.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="287.90,415.30;329.80,640.00;498.10,634.20;456.40,398.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="447.30,403.50;478.90,640.00;662.50,631.70;618.20,390.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="121.50,417.00;298.00,405.70;348.00,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="64" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000320.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="292.40,424.30;329.80,640.00;498.10,634.20;462.00,412.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="450.70,415.90;478.90,640.00;662.50,631.70;626.10,409.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="122.60,429.40;303.60,418.10;348.00,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="65" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000325.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="300.30,444.50;329.80,640.00;498.10,634.20;467.60,434.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="452.90,430.50;478.90,640.00;662.50,631.70;627.20,428.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="122.60,442.90;309.20,436.10;348.00,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="66" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000330.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="304.80,454.60;329.80,640.00;498.10,634.20;472.10,445.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="457.40,440.60;478.90,640.00;662.50,631.70;630.60,440.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="131.60,458.60;314.80,455.20;345.80,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="67" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000335.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="311.50,467.00;329.80,640.00;498.10,634.20;474.30,460.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="461.90,460.80;478.90,640.00;662.50,631.70;635.10,463.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="142.80,468.70;319.30,464.20;345.80,640.00;165.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="68" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000340.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="311.50,487.20;329.80,640.00;498.10,634.20;477.70,474.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="465.30,478.80;478.90,640.00;662.50,631.70;634.00,477.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="151.80,486.70;323.80,482.20;345.80,640.00;171.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="69" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000345.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="305.90,499.60;329.80,640.00;498.10,634.20;477.70,489.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="464.20,493.40;478.90,640.00;662.50,631.70;634.00,491.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="154.00,500.20;323.80,494.60;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="70" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000350.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="308.10,514.20;329.80,640.00;491.40,640.00;477.70,501.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="464.20,500.10;478.90,640.00;647.90,640.00;634.00,505.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="154.00,512.60;326.00,505.80;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="71" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000355.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="307.40,508.88;329.80,640.00;491.40,640.00;476.43,497.78" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="462.93,496.47;478.90,640.00;647.90,640.00;633.02,499.88" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="155.12,508.97;324.60,501.88;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="72" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000360.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="306.70,503.57;329.80,640.00;491.40,640.00;475.17,493.87" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="461.67,492.83;478.90,640.00;647.90,640.00;632.03,494.57" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="156.23,505.33;323.20,497.97;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="73" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000365.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="306.00,498.25;329.80,640.00;491.40,640.00;473.90,489.95" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="460.40,489.20;478.90,640.00;647.90,640.00;631.05,489.25" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="157.35,501.70;321.80,494.05;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="74" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000370.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="305.30,492.93;329.80,640.00;491.40,640.00;472.63,486.03" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="459.13,485.57;478.90,640.00;647.90,640.00;630.07,483.93" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="158.47,498.07;320.40,490.13;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="75" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000375.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="304.60,487.62;329.80,640.00;491.40,640.00;471.37,482.12" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="457.87,481.93;478.90,640.00;647.90,640.00;629.08,478.62" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="159.58,494.43;319.00,486.22;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="76" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000380.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="303.90,482.30;329.80,640.00;491.40,640.00;470.10,478.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="456.60,478.30;478.90,640.00;647.90,640.00;628.10,473.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="160.70,490.80;317.60,482.30;345.80,640.00;176.60,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="77" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000385.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="297.20,466.30;329.80,640.00;491.40,640.00;470.90,465.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="454.90,462.30;478.90,640.00;647.90,640.00;628.90,462.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="160.70,479.00;315.10,469.70;345.80,640.00;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="78" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000390.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="292.20,457.10;329.80,640.00;491.40,640.00;465.90,447.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="449.90,445.50;478.90,640.00;647.90,640.00;628.10,443.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="162.40,468.90;308.40,454.60;345.80,640.00;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="79" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000395.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="288.00,446.20;329.80,640.00;491.40,640.00;460.00,432.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="442.30,427.90;478.90,640.00;647.90,640.00;620.50,418.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="159.90,459.70;300.00,446.20;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="80" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000400.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="277.10,430.20;329.80,640.00;491.40,640.00;451.60,409.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="438.10,416.10;478.90,640.00;647.90,640.00;618.00,401.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="152.30,445.40;293.30,430.20;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="81" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000405.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="268.70,421.80;329.80,640.00;491.40,640.00;444.90,399.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="426.30,395.90;478.90,640.00;647.90,640.00;615.50,377.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="149.80,437.00;287.40,419.30;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="82" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000410.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="256.90,412.60;329.80,640.00;491.40,640.00;432.30,382.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="416.20,383.30;478.90,640.00;643.70,617.30;612.10,354.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="148.10,434.50;270.60,407.50;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="83" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000415.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="245.10,401.70;329.80,640.00;486.40,637.50;420.50,361.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="404.40,369.90;478.10,635.00;642.00,591.30;586.10,333.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="143.90,427.80;262.20,402.50;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="84" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000420.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="230.00,395.80;329.80,640.00;486.40,617.30;406.20,347.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="391.00,351.40;474.70,619.00;644.50,568.60;576.00,304.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="141.40,422.80;249.60,391.60;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="85" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000425.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="218.20,394.10;329.80,640.00;481.40,602.20;383.50,328.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="368.30,335.40;471.30,602.20;605.80,544.30;530.70,284.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="127.10,416.90;230.30,386.60;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="86" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000430.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="586.50,520.60;712.60,468.20;617.10,205.80;481.10,263.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="193.00,378.10;332.30,640.00;473.00,581.20;364.20,311.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="354.90,318.60;466.30,586.20;596.60,516.60;496.30,259.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="100.20,410.20;212.70,374.00;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="608.31,212.46;695.65,473.67;800.00,391.20;731.77,166.27" z_order="0">
+    </polygon>
+  </image>
+  <image id="87" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000435.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="172.80,373.90;332.30,640.00;466.30,556.00;340.70,289.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="323.00,297.60;461.30,563.50;582.30,484.70;477.00,224.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_gesperrt" source="manual" occluded="0" points="100.20,410.20;190.90,369.80;340.80,639.20;182.50,640.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="579.70,161.20;688.10,438.40;798.30,381.10;710.80,112.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="458.80,235.98;599.91,164.59;697.33,439.23;573.03,497.19" z_order="0">
+    </polygon>
+  </image>
+  <image id="88" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000440.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="152.60,373.10;324.70,634.10;457.10,544.20;315.50,278.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="297.80,282.50;450.40,545.00;573.10,457.00;448.40,196.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="552.80,141.90;667.10,392.20;786.50,336.60;679.70,69.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="431.90,203.20;568.00,128.50;677.20,387.20;563.00,462.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="89" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000445.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="132.40,368.90;316.30,620.70;446.20,519.00;286.10,265.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="271.80,266.50;436.10,526.50;561.30,431.80;417.30,175.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="517.50,102.40;650.30,355.20;759.60,275.30;644.40,25.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="400.00,180.50;537.80,96.60;656.20,346.90;548.70,435.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="626.78,34.41;743.53,277.13;800.00,175.00;757.50,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="90" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000450.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="106.40,368.10;308.70,611.50;431.10,497.20;255.00,248.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="243.20,256.40;424.30,508.00;540.30,399.00;373.60,152.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="490.60,76.40;631.80,314.90;732.70,216.50;621.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="366.40,161.20;503.40,64.70;638.60,307.40;535.30,405.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="605.80,5.80;730.90,216.70;800.00,91.00;757.50,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="91" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000455.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="91.30,349.60;292.70,599.70;413.50,478.70;221.40,228.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="212.10,242.10;408.30,482.80;521.80,364.60;328.20,123.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="454.50,34.40;607.40,267.90;713.40,163.60;621.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="336.20,131.80;474.80,21.90;615.90,262.00;512.60,373.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="605.80,5.80;704.00,170.50;797.50,64.10;757.50,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="92" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000460.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="91.30,349.60;293.50,593.80;400.90,456.90;185.30,222.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="174.30,234.50;397.40,464.30;495.80,332.70;291.20,90.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="435.20,28.50;579.70,230.90;676.40,111.50;607.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="290.00,104.90;439.50,0.90;586.50,225.00;491.60,343.60" z_order="0">
+    </polygon>
+  </image>
+  <image id="93" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000465.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="66.90,317.70;284.30,582.00;383.30,437.60;150.00,205.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="140.70,220.20;374.70,445.80;477.30,304.10;247.50,69.10" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="404.10,1.60;550.30,187.20;645.30,46.80;607.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="236.20,81.40;418.50,0.00;558.80,178.80;466.40,315.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="94" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000470.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="50.10,304.30;272.50,571.10;367.30,419.10;114.70,196.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="102.90,207.60;361.30,427.30;448.70,271.30;219.80,39.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="236.20,81.40;415.10,0.00;531.90,138.50;442.00,283.10" z_order="0">
+    </polygon>
+  </image>
+  <image id="95" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000475.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,290.00;263.30,564.40;344.60,392.20;67.70,173.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="58.40,187.40;336.10,403.80;424.30,242.70;172.80,2.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="236.20,81.40;415.10,0.00;500.00,92.30;417.60,254.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="96" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000480.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,290.00;247.30,556.80;326.10,374.60;29.90,172.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="18.90,184.90;320.10,386.20;390.70,208.30;113.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="195.90,71.30;415.10,0.00;454.60,42.70;384.00,220.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="97" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000485.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,192.50;289.00,361.80;352.10,173.00;92.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="49.78,11.73;350.46,182.23;406.02,0.00;193.64,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,187.24;285.79,356.92;228.67,537.50;0.00,383.94" z_order="0">
+    </polygon>
+  </image>
+  <image id="98" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000490.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,220.20;263.00,344.20;304.20,143.60;72.90,5.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="45.60,11.70;300.10,152.80;341.40,0.80;193.64,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,202.40;264.80,331.70;221.10,531.60;0.00,383.94" z_order="0">
+    </polygon>
+  </image>
+  <image id="99" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000495.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="526.77,594.84;667.20,602.30;739.50,359.40;582.60,296.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="583.00,286.40;740.30,338.60;789.49,35.24;637.62,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,231.10;231.10,311.40;260.50,115.00;72.90,5.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,217.50;232.00,313.20;202.60,522.40;0.00,383.94" z_order="0">
+    </polygon>
+  </image>
+  <image id="100" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000500.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Frei" source="semi-auto" occluded="0" points="547.20,235.60;716.70,295.20;742.10,1.60;575.10,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="517.16,631.69;676.80,634.80;711.30,304.00;552.70,241.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,251.90;198.60,311.40;218.90,90.30;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,225.30;202.10,298.90;190.90,501.60;0.00,383.94" z_order="0">
+    </polygon>
+  </image>
+  <image id="101" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000505.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="semi-auto" occluded="0" points="510.45,632.11;670.27,639.51;682.29,233.72;518.40,189.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,262.30;176.50,302.30;163.00,66.90;0.00,7.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="515.21,180.61;680.43,227.44;687.43,0.00;516.28,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="102" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000510.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,254.50;150.50,277.60;138.30,37.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="503.50,162.40;668.70,191.00;669.20,2.60;503.30,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="500.90,170.20;667.40,198.80;666.10,598.20;500.90,599.51" z_order="0">
+    </polygon>
+  </image>
+  <image id="103" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000515.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,224.60;132.30,247.70;118.80,5.80;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="488.40,129.60;659.50,162.40;657.40,0.10;488.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="490.00,131.60;662.40,163.50;666.90,570.50;503.40,563.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="104" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000520.png" width="800" height="640">
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,202.80;119.70,218.30;97.80,0.80;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="479.20,89.30;646.90,115.40;645.60,0.00;476.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="483.30,94.60;646.50,121.50;652.60,545.30;501.70,534.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="105" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000525.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,367.90;142.30,399.10;115.90,181.70;0.10,163.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,189.70;113.20,198.70;88.40,0.10;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="473.90,24.90;647.90,45.20;655.50,503.50;501.70,507.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="106" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000530.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,376.60;135.80,393.30;103.50,152.60;0.00,137.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,173.20;106.40,179.30;79.70,1.10;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="459.30,5.80;638.90,18.20;653.30,481.00;493.80,481.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="107" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000535.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="7.54,342.01;114.34,361.53;81.31,114.68;-3.06,93.38" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="442.80,0.00;615.60,9.50;646.50,449.90;486.00,449.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="108" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000540.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="8.01,335.37;116.10,343.20;65.70,88.60;2.16,85.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="442.80,0.00;605.90,0.00;639.70,423.70;485.00,427.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="109" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000545.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="6.26,304.50;98.73,326.27;65.78,82.75;0.99,71.37" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="444.42,2.92;608.33,7.45;640.35,432.60;485.00,435.82" z_order="0">
+    </polygon>
+  </image>
+  <image id="110" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000550.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="4.16,320.71;101.49,342.24;67.08,84.69;0.21,69.99" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="446.03,5.83;610.77,14.90;641.00,441.50;485.00,444.23" z_order="0">
+    </polygon>
+  </image>
+  <image id="111" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000555.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="3.51,322.35;101.93,343.68;67.50,82.89;-0.45,68.65" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="447.65,8.75;613.20,22.35;641.65,450.40;485.00,452.65" z_order="0">
+    </polygon>
+  </image>
+  <image id="112" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000560.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="7.91,328.28;113.29,356.64;81.18,109.72;-4.29,85.43" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="449.27,11.67;615.63,29.80;642.30,459.30;485.00,461.07" z_order="0">
+    </polygon>
+  </image>
+  <image id="113" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000565.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="5.75,325.97;125.80,363.70;85.20,118.90;0.00,111.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="450.88,14.58;618.07,37.25;642.95,468.20;485.00,469.48" z_order="0">
+    </polygon>
+  </image>
+  <image id="114" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000570.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="auto" occluded="0" points="3.26,332.12;110.97,357.61;88.64,141.28;1.42,112.17" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="452.50,17.50;620.50,44.70;643.60,477.10;485.00,477.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="115" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000575.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="3.87,328.18;121.70,373.22;102.50,163.30;0.00,144.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="460.30,49.60;631.20,78.70;647.50,502.40;486.90,499.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,178.08;105.17,188.45;87.14,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="116" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000580.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="10.77,321.76;133.70,397.60;114.50,194.20;0.00,168.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="470.00,78.80;640.90,104.00;647.50,502.40;497.60,522.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,189.70;114.90,217.60;87.14,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="468.62,88.36;640.62,115.57;642.17,-0.00;464.84,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="117" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000585.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,350.00;140.70,403.70;125.60,216.80;1.36,184.47" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="480.70,113.80;644.80,147.70;648.50,539.30;498.60,545.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,215.00;119.80,241.90;99.80,1.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="478.30,108.80;645.50,141.80;642.17,0.00;472.60,2.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="118" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000590.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="485.60,139.10;647.70,179.80;654.30,577.20;499.60,582.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,242.20;132.40,267.20;113.40,21.40;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="480.20,132.10;653.30,172.90;649.00,1.90;477.50,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="119" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000595.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="488.50,163.40;650.60,199.20;651.40,593.70;497.70,594.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,263.60;132.40,287.60;108.50,41.80;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="484.10,149.60;656.20,189.40;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="120" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000600.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="489.50,188.70;650.60,219.60;658.20,617.00;496.70,612.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,300.50;136.30,321.60;113.40,80.70;0.00,36.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="486.00,173.90;652.30,209.80;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="121" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000605.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="488.50,211.10;650.60,236.10;658.20,617.00;496.70,612.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="0.00,324.80;134.40,344.00;112.40,98.20;0.00,58.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="487.00,198.20;651.30,222.40;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="122" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000610.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="490.40,231.50;651.60,257.50;658.20,617.00;496.70,612.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="1.00,343.30;137.30,384.80;113.40,130.30;0.00,92.40" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="487.00,214.70;651.30,246.70;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="123" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000615.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="492.30,255.80;651.60,288.60;658.20,617.00;496.70,612.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="1.00,343.30;137.30,384.80;115.30,162.40;0.00,124.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="488.00,247.70;652.30,275.90;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="124" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000620.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="489.40,278.20;654.50,297.30;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="1.00,343.30;137.30,384.80;115.30,188.60;1.90,157.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="488.00,265.20;652.30,275.90;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="125" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000625.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="494.30,306.40;649.60,322.60;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="1.00,343.30;137.30,384.80;117.20,220.70;0.00,186.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="493.80,293.40;651.30,314.80;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,210.61;114.89,234.13;95.76,0.00;0.00,-0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="126" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000630.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,253.80;124.70,277.90;108.10,39.80;0.39,9.05" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="491.40,331.70;649.60,356.60;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_besetzt" source="manual" occluded="0" points="1.00,343.30;137.30,384.80;128.90,261.50;1.90,221.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="491.90,317.70;648.40,345.90;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="127" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000635.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="4.00,287.90;136.00,314.60;113.90,73.90;0.80,43.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="493.30,361.80;651.50,373.10;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="490.90,347.80;648.40,361.40;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="128" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000640.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="490.40,390.00;652.50,401.30;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="486.00,380.80;652.30,393.50;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,325.60;134.32,337.13;114.89,102.93;0.00,76.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="129" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000645.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="490.40,415.30;654.40,426.60;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="489.90,406.10;654.20,420.70;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,344.10;138.20,365.30;118.80,135.00;0.00,91.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="130" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000650.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="494.30,441.50;658.30,450.90;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="495.70,433.30;658.10,442.10;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,391.70;141.10,399.30;124.60,175.80;0.00,133.60" z_order="0">
+    </polygon>
+  </image>
+  <image id="131" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000655.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="494.30,464.80;661.20,479.10;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="493.80,447.90;659.10,467.40;649.00,1.90;480.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,391.70;141.10,399.30;123.60,185.50;0.00,154.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="132" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000660.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="495.30,487.20;666.10,504.40;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="494.80,475.10;662.00,496.60;661.60,48.50;482.30,26.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,391.70;141.10,399.30;127.50,232.10;0.00,199.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Besetzt" source="manual" occluded="0" points="490.42,0.00;488.05,21.30;657.14,45.60;660.31,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,222.86;126.50,248.70;107.59,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="133" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000665.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="490.55,41.08;658.90,61.90;659.45,0.00;488.90,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="1.90,254.80;130.00,279.90;108.60,22.60;0.90,6.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="496.30,515.40;669.00,527.70;658.20,622.80;497.70,625.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,501.30;662.00,515.10;663.50,76.70;490.10,42.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,391.70;141.10,399.30;128.50,252.50;1.90,226.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="134" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000670.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="484.70,67.70;660.80,110.00;657.20,1.00;485.60,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="6.27,282.88;129.70,317.10;113.60,70.80;0.00,28.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="494.40,542.60;669.00,550.10;667.90,640.00;496.70,640.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="495.70,537.30;653.30,540.40;658.60,115.60;491.10,74.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="135" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000675.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="495.70,104.60;660.90,124.10;665.80,0.30;493.20,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Gesperrt" source="manual" occluded="0" points="495.40,567.90;668.00,574.40;667.90,640.00;496.70,640.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="493.80,555.80;659.10,564.70;660.50,135.00;493.00,114.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,330.40;134.81,348.12;114.40,95.45;0.00,58.49" z_order="0">
+    </polygon>
+  </image>
+  <image id="136" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000680.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="492.50,133.40;663.30,159.30;666.40,3.90;495.60,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;660.50,173.90;494.00,148.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,350.80;139.70,375.30;122.20,138.20;0.00,97.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="137" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000685.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="492.70,164.00;662.70,202.00;662.60,9.30;491.44,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;659.50,208.90;497.90,175.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,350.80;139.70,375.30;126.10,167.40;2.90,131.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="138" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000690.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="498.30,202.80;656.10,232.30;666.80,17.60;500.05,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,192.60;129.50,225.00;110.83,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;659.50,242.90;495.00,207.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,350.80;138.70,395.70;128.00,208.20;1.00,164.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="139" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000695.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="501.50,245.00;658.40,269.40;674.70,1.10;497.40,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,234.40;141.20,267.20;118.80,1.40;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;659.50,272.10;498.90,255.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,350.80;138.70,395.70;131.90,241.20;0.00,207.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="140" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000700.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="499.60,249.60;660.80,269.60;667.80,23.30;499.73,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,264.70;136.25,294.80;123.40,42.20;0.00,1.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;661.45,294.45;498.90,275.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="141" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000705.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="499.60,283.80;657.70,310.90;666.20,64.30;505.10,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,297.60;146.10,330.40;131.80,84.00;0.00,42.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;663.40,316.80;498.90,295.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="142" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000710.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="503.70,315.20;666.20,327.70;667.60,127.34;505.50,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="496.70,597.60;662.00,586.10;662.40,337.20;500.80,334.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,351.33;144.53,358.81;132.87,117.80;0.00,81.72" z_order="0">
+    </polygon>
+  </image>
+  <image id="143" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000715.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="504.60,351.10;664.80,364.80;667.80,159.94;506.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="497.70,626.80;662.00,586.10;661.40,374.10;502.70,366.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,371.70;148.40,400.60;138.70,156.70;0.00,110.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="144" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000720.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="504.80,379.60;664.30,385.70;673.10,167.30;511.70,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Frei" source="manual" occluded="0" points="497.70,626.80;662.00,586.10;664.30,396.50;504.60,394.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,371.70;148.40,400.60;139.70,189.70;0.00,156.60" z_order="0">
+    </polygon>
+  </image>
+  <image id="145" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000725.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="505.00,409.20;659.40,415.10;679.20,218.60;514.10,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,371.70;148.40,400.60;144.60,230.50;0.00,193.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="146" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000730.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="505.60,450.70;684.80,470.60;689.10,261.30;518.30,0.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,371.70;150.30,417.10;146.50,266.50;0.00,229.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="147" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000735.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="504.80,468.90;696.00,490.20;690.70,281.00;517.10,36.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,371.70;150.30,417.10;156.20,300.50;0.00,257.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="148" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000740.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="522.40,515.30;687.40,529.40;692.70,326.90;549.80,83.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,402.80;181.40,456.00;191.20,328.70;0.00,273.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="149" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000745.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="533.10,565.00;714.61,585.28;725.30,392.00;597.50,145.00" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,423.20;204.70,485.20;228.10,340.40;0.00,257.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="150" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000750.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="1.90,423.20;223.20,509.50;267.90,355.90;0.00,232.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="151" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000755.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,426.10;240.70,536.70;303.90,378.30;0.00,200.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="152" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000760.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="0.00,370.70;255.30,555.20;339.80,404.60;57.30,197.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="153" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000765.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="15.50,360.00;267.00,579.50;371.90,431.80;128.20,209.10" z_order="0">
+    </polygon>
+  </image>
+  <image id="154" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000770.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="46.60,357.10;276.70,599.90;402.00,461.00;190.40,221.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="155" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000775.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="69.90,362.00;287.40,609.60;424.40,489.20;244.80,230.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="156" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000780.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="118.50,354.20;297.10,619.30;439.00,525.20;287.60,259.60" z_order="0">
+    </polygon>
+  </image>
+  <image id="157" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000785.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="156.40,360.00;302.00,631.00;456.50,555.30;329.40,280.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="158" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000790.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="314.98,637.42;469.90,580.20;366.70,311.30;192.30,367.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="159" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000795.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="309.10,640.00;475.80,611.20;395.28,342.74;225.30,379.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="160" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000800.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="314.50,640.00;482.60,631.80;430.50,366.50;255.60,393.80" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="161.03,636.04;325.90,638.70;269.55,391.64;105.80,413.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="161" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000805.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="319.20,638.10;487.30,638.70;450.60,393.30;282.34,403.11" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="159.81,626.72;330.80,640.00;290.85,403.84;117.80,408.80" z_order="0">
+    </polygon>
+  </image>
+  <image id="162" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000810.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="321.55,635.39;491.30,640.00;476.40,425.20;302.53,423.18" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="169.48,640.00;337.90,640.00;319.30,415.40;116.58,409.11" z_order="0">
+    </polygon>
+  </image>
+  <image id="163" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000815.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="321.80,638.00;494.20,640.00;496.90,453.00;324.60,427.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="180.20,638.80;341.50,639.00;340.40,430.30;137.40,405.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="164" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000820.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="331.00,640.00;498.10,640.00;513.00,479.90;344.00,446.90" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="170.77,413.23;360.26,453.07;345.88,640.00;145.46,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="165" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000825.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="339.40,640.00;505.10,640.00;516.00,502.10;350.60,462.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="153.10,640.00;352.00,640.00;368.40,467.10;173.80,424.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="166" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000830.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="129.80,629.30;353.10,640.00;367.60,486.40;162.80,440.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="339.40,640.00;498.90,640.00;516.70,519.00;348.70,481.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="167" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000835.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="200.30,640.00;353.40,638.70;362.40,512.20;183.50,476.30" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="334.80,640.00;503.30,640.00;517.70,534.80;342.60,507.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="168" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000840.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="338.20,640.00;500.90,640.00;510.50,546.30;340.60,522.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="244.16,639.33;352.60,636.70;358.70,527.40;203.45,507.38" z_order="0">
+    </polygon>
+  </image>
+  <image id="169" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000845.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="333.60,640.00;500.10,640.00;507.70,553.50;342.70,529.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="240.95,640.00;352.00,640.00;354.90,532.00;204.05,515.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="170" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000850.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="330.80,640.00;501.00,640.00;506.20,547.90;336.90,516.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="243.95,638.62;352.00,639.90;354.40,531.80;203.24,508.62" z_order="0">
+    </polygon>
+  </image>
+  <image id="171" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000855.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="337.00,640.00;498.00,640.00;505.00,549.60;340.80,522.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="244.43,638.68;351.90,639.20;355.50,532.80;202.91,509.06" z_order="0">
+    </polygon>
+  </image>
+  <image id="172" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000860.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="239.87,640.00;351.40,640.00;355.00,529.70;204.49,514.25" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="333.00,640.00;502.50,640.00;507.20,551.90;339.80,527.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="173" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000865.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="245.22,640.00;349.30,640.00;351.80,522.40;202.50,507.47" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="334.00,640.00;503.20,640.00;511.40,544.70;336.40,521.90" z_order="0">
+    </polygon>
+  </image>
+  <image id="174" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000870.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="334.60,640.00;495.80,640.00;501.00,531.80;333.17,509.59" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="202.14,491.27;352.40,513.77;348.28,640.00;192.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="175" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000875.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="331.70,640.00;498.50,640.00;502.90,510.50;325.11,501.62" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="198.50,483.30;346.60,498.50;348.28,640.00;192.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="176" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000880.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="328.50,635.60;498.50,640.00;495.40,491.30;323.30,482.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="193.40,471.70;342.20,483.30;346.80,640.00;192.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="177" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000885.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="327.80,640.00;491.30,640.00;491.20,473.50;315.09,473.50" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="178.90,455.70;334.20,468.80;346.80,640.00;192.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="178" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000890.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="325.90,640.00;490.20,640.00;482.00,455.80;309.09,452.17" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="170.20,446.30;324.80,449.90;346.80,640.00;192.00,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="179" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000895.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="323.97,640.00;490.40,640.00;470.80,431.90;299.49,440.42" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="161.50,441.90;311.70,439.00;340.30,640.00;188.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="180" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000900.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="325.18,640.00;489.00,640.00;448.90,405.10;280.10,425.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="154.20,439.00;292.80,423.00;335.20,640.00;188.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="181" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000905.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="317.20,640.00;489.20,640.00;427.70,382.90;256.60,411.60" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="154.20,439.00;271.70,411.40;333.00,640.00;188.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="182" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000910.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="319.70,640.00;486.30,624.00;410.30,352.90;234.00,401.70" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="140.40,418.70;246.30,398.30;333.00,640.00;188.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="183" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000915.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="326.52,640.00;478.50,598.50;376.60,333.70;214.71,397.49" z_order="0">
+    </polygon>
+    <polygon label="Parking_90_free" source="manual" occluded="0" points="140.40,418.70;220.90,392.50;333.00,640.00;188.40,640.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="184" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000920.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="324.42,640.00;472.40,574.90;350.80,318.88;185.60,390.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="185" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000925.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="324.56,640.00;461.80,554.80;317.50,290.10;160.01,385.01" z_order="0">
+    </polygon>
+  </image>
+  <image id="186" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000930.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="310.40,630.20;447.70,523.20;284.10,271.10;121.30,379.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="187" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000935.png" width="800" height="640">
+  </image>
+  <image id="188" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000940.png" width="800" height="640">
+  </image>
+  <image id="189" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000945.png" width="800" height="640">
+  </image>
+  <image id="190" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000950.png" width="800" height="640">
+  </image>
+  <image id="191" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000955.png" width="800" height="640">
+  </image>
+  <image id="192" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000960.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="5.60,421.70;237.30,539.70;293.60,369.90;0.00,218.20" z_order="0">
+    </polygon>
+  </image>
+  <image id="193" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000965.png" width="800" height="640">
+  </image>
+  <image id="194" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000970.png" width="800" height="640">
+    <polygon label="Parking_90_free" source="semi-auto" occluded="0" points="0.00,462.00;201.50,484.70;207.50,331.60;0.00,285.20" z_order="0">
+    </polygon>
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="529.80,576.80;708.90,615.10;722.16,360.32;568.40,95.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="195" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000975.png" width="800" height="640">
+  </image>
+  <image id="196" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000980.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="481.60,418.20;640.50,415.40;626.10,185.92;440.70,0.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="197" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000985.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="485.20,417.00;641.90,407.40;629.30,181.20;444.60,4.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="198" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000990.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="485.60,466.40;643.30,456.90;621.40,190.00;434.90,6.00" z_order="0">
+    </polygon>
+  </image>
+  <image id="199" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_000995.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="493.50,446.70;645.10,434.40;638.70,210.40;447.50,3.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="200" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001000.png" width="800" height="640">
+  </image>
+  <image id="201" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001005.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="496.10,492.90;665.74,507.46;642.10,271.50;461.00,51.40" z_order="0">
+    </polygon>
+  </image>
+  <image id="202" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001010.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="auto" occluded="0" points="495.36,534.87;670.56,529.87;627.71,270.21;469.69,91.10" z_order="0">
+    </polygon>
+  </image>
+  <image id="203" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001015.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="497.20,570.90;667.04,573.28;654.20,344.20;480.20,133.30" z_order="0">
+    </polygon>
+  </image>
+  <image id="204" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001020.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="504.90,604.70;683.84,613.95;652.90,373.30;490.40,165.70" z_order="0">
+    </polygon>
+  </image>
+  <image id="205" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001025.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="502.00,636.00;677.99,640.00;669.10,428.10;491.00,192.50" z_order="0">
+    </polygon>
+  </image>
+  <image id="206" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001030.png" width="800" height="640">
+    <polygon label="Parking_Parallel_Besetzt" source="semi-auto" occluded="0" points="507.10,640.00;673.90,638.48;647.50,436.00;499.28,233.56" z_order="0">
+    </polygon>
+  </image>
+  <image id="207" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001035.png" width="800" height="640">
+  </image>
+  <image id="208" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001040.png" width="800" height="640">
+  </image>
+  <image id="209" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001045.png" width="800" height="640">
+  </image>
+  <image id="210" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001050.png" width="800" height="640">
+  </image>
+  <image id="211" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001055.png" width="800" height="640">
+  </image>
+  <image id="212" name="rosbag2_2026_10_28-13_36_43/rosbag2_2026_10_28-13_36_43_001060.png" width="800" height="640">
+  </image>
+</annotations>

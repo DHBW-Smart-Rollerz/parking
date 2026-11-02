@@ -166,6 +166,7 @@ cython_debug/
 /data/*
 !/data/dataset_v4/
 !/data/dataset_v5/
+!/data/dataset_v6/
 
 # Rosbags and archives (e.g. CVAT exports), if copied into the package
 *.mcap
