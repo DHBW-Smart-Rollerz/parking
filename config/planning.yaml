@@ -1,0 +1,65 @@
+# Config of the parking pipeline after the detection: rectangle fit, tracking,
+# selection of the target spot and path planning. Independent of the ROS system.
+# All lengths in mm, angles in deg.
+
+# Meaning of the class labels of the detector
+classes:
+  Parking_90_free: { kind: perpendicular, status: free }
+  Parking_90_besetzt: { kind: perpendicular, status: occupied }
+  Parking_90_gesperrt: { kind: perpendicular, status: blocked }
+  Parking_Parallel_Frei: { kind: parallel, status: free }
+  Parking_Parallel_Besetzt: { kind: parallel, status: occupied }
+  Parking_Parallel_Gesperrt: { kind: parallel, status: blocked }
+
+# Nominal size of the parking spots (length = long side, width = short side) according
+# to the CAuDri-Challenge regulations 2026.
+spot_geometry:
+  # A.5.2: all perpendicular spots have the same size, 350 mm wide and 500 mm deep
+  perpendicular: { length: 500, width: 350 }
+  # 5.4.1 / A.5.1: 300 mm deep (right lane marking to the outer line). The length
+  # varies, the spots get longer in driving direction (the last one >= 700 mm) and
+  # are limited by obstacles or "no parking" zones, gaps < 400 mm are no spots.
+  # length: start value of the rectangle fit, only min_length is checked.
+  parallel:
+    { length: 700, width: 300, variable_length: true, min_length: 400 }
+
+# Fit of a rectangle to the four detected corners (geometry.fit_rectangle). Corners in
+# the black area of the bird's eye view are guessed by the detector and get a low
+# weight. With the known size, three visible corners determine the rectangle. A
+# detection is only used for the pose of the spot if the fit is good.
+rectangle_fit:
+  min_visible_corners: 3
+  refine_iterations: 2 # Refits with the measured size (all corners visible), 0: off
+  max_residual: 50 # RMS distance of the corners to the rectangle
+  size_tolerance: 0.35 # Maximum relative deviation of the measured from the nominal size
+
+# Tracking of the spots over several frames (tracker.SpotTracker)
+tracker:
+  gate: 250 # Maximum distance of the centers for the association
+  smoothing: 0.4 # Weight of a new measurement in the moving average
+  min_hits: 3 # Detections until a spot is confirmed
+  min_valid_hits: 2 # Thereof with reliable geometry
+  max_misses: 10 # Frames without detection until a spot is deleted
+  vote_window: 15 # Number of the last detections for the class vote
+  # Predict the tracks with the common motion of all spots (constant velocity).
+  # Needed for tracking in the moving vehicle frame (no pose, e.g. the rosbags).
+  predict_motion: true
+
+# Vehicle geometry (planning.vehicle.VehicleGeometry). Values of the simulation model
+# and the old parking_spot package, please measure on the real vehicle.
+vehicle:
+  wheelbase: 260
+  max_steering_angle: 35
+  length: 370
+  width: 200
+  rear_overhang: 70 # Rear bumper behind the rear axle
+  rear_axle_x: -85 # Rear axle in the vehicle frame (simulation: -115)
+
+# Path planning (planning.target.ParkingPlanner)
+planner:
+  safety_margin: 20 # Added to every side of the vehicle for the footprint test
+  radius_factor: 1.0 # Turning radius R = radius_factor * R_min
+  perpendicular_entry: [forward, backward] # Tried in this order
+  max_heading_error: 15 # Maximum angle between vehicle and parallel spot
+  preferred_kind: any # any, perpendicular or parallel
+  sample_step: 20 # Distance of the published path poses

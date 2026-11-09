@@ -9,12 +9,37 @@ detector: 'yolo_pose'
 # in the model files.
 parking_net:
   model_path: 'models/parking_net.pt' # Input size is stored in the checkpoint
+# YOLO pose: one network per view (parameter "view" of the node), image_size is the
+# imgsz of the training. A model trained on "bev" can also be used on "parking_bev"
+# with image_size 864, then the spots have the same size in px as in the training.
 yolo_pose:
-  model_path: 'models/yolo_pose.pt'
-  image_size: 640 # Same as imgsz of the training
+  bev: { model_path: 'models/yolo_pose.pt', image_size: 640 }
+  # corner_visibility: which corners the rectangle fit trusts
+  #   image_area:          corners not in the black area of the bird's eye view
+  #   keypoint_confidence: confidence of the network per corner >= keypoint_threshold
+  #                        (networks trained with the corner visibility of
+  #                        yolo_export, they learn which corners are unknown)
+  parking_bev:
+    model_path: 'models/yolo_pose_parking_bev.pt'
+    image_size: 800
+    corner_visibility: keypoint_confidence
+    keypoint_threshold: 0.5
 
 # Minimum score of a detected parking spot [0, 1]
 score_threshold: 0.3
+
+# Bird's eye view of the parking package (perception/bev.py), computed from the
+# undistorted image. It covers a larger region than the view of camera_preprocessing.
+# Changing these values changes the images, the annotations and models of this view
+# have to be converted or recreated.
+parking_bev:
+  x_range: [-150, 2000] # mm in driving direction (image up)
+  y_range: [-1200, 1200] # mm to the left (image left)
+  resolution: 3.0 # mm per px -> 800 x 717 px
+
+# Corners closer than this to the black area of the bird's eye view (outside of the
+# camera's field of view) count as not visible, the parking spot is cut off. In px.
+visibility_border: 8
 
 # Geometry of a parking spot in mm (values of the real track, simulation see comments)
 parking_spot:

@@ -3,14 +3,33 @@ parking_perception_node:
   ros__parameters:
     # Path of the model config (relative to the package share directory)
     model_config_path: "config/model.yaml"
+    # Path of the planning config: rectangle fit, tracking, vehicle, path planning
+    planning_config_path: "config/planning.yaml"
 
-    # true: image_subscriber is the bird's eye view (/camera/image/bev)
-    # false: image_subscriber is the undistorted image (/camera/image/undistorted)
-    birds_eye: true
+    # View of the detector, the model has to be trained on the same view:
+    #   "bev":         bird's eye view of camera_preprocessing
+    #                  -> image_subscriber: "/camera/image/bev"
+    #   "undistorted": undistorted camera image
+    #                  -> image_subscriber: "/camera/image/undistorted"
+    #   "parking_bev": larger bird's eye view of this package (parking_bev in
+    #                  config/model.yaml), computed from the undistorted image
+    #                  -> image_subscriber: "/camera/image/undistorted"
+    view: "parking_bev"
 
-    # Subscriber topics
-    image_subscriber: "/camera/image/bev"
+    # true: track the spots in the global frame of pose_subscriber (if received),
+    # false or no pose: track in the vehicle frame (only for slow driving)
+    use_pose: true
+
+    # Frame id of the published path and target pose (vehicle frame of
+    # camera_preprocessing, rear axle pose at x = vehicle.rear_axle_x, positions in mm)
+    frame_id: "vehicle"
+
+    # Subscriber topics (image_subscriber must match the view, see above)
+    image_subscriber: "/camera/image/undistorted"
     pose_subscriber: "/pose_estimation/pose"
 
     # Publisher topics
     debug_image_publisher: "/parking/debug_image"
+    path_publisher: "/parking/path" # nav_msgs/Path, empty without target
+    target_publisher: "/parking/target_pose" # geometry_msgs/PoseStamped (rear axle)
+    segments_publisher: "/parking/path_segments" # kappa(s): [length, curvature, direction]*n

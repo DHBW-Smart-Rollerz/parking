@@ -4,9 +4,15 @@ The raw images are processed in the same way as in the camera_preprocessing node
 (grayscale, downscale, brightness, undistortion, bird's eye view) with the
 calibration installed in the camera_preprocessing package.
 
+Views:
+    bev:          bird's eye view of camera_preprocessing (800 x 640)
+    undistorted:  undistorted camera image
+    parking_bev:  larger bird's eye view of the parking package
+                  (section parking_bev of config/model.yaml)
+
 Usage:
     python3 src/parking/tools/extract_frames.py <bag> <output dir> \
-        [--every 5] [--view bev|undistorted] [--topic /camera/image/raw]
+        [--every 5] [--view bev|undistorted|parking_bev] [--topic /camera/image/raw]
 """
 
 from __future__ import annotations
@@ -17,13 +23,20 @@ from pathlib import Path
 import cv2
 import numpy as np
 import rosbag2_py
+import yaml
 from camera_preprocessing.transformation.birds_eyed_view import Birdseye
 from camera_preprocessing.transformation.calibration import Calibration
+from camera_preprocessing.transformation.coordinate_transform import (
+    CoordinateTransform,
+)
 from camera_preprocessing.transformation.distortion import Distortion
 from cv_bridge import CvBridge
 from rclpy.serialization import deserialize_message
 from sensor_msgs.msg import Image
 
+from parking.perception.bev import ParkingBirdseye
+
+PACKAGE_DIR = Path(__file__).resolve().parents[1]
 TARGET_BRIGHTNESS = 50  # Same value as in the camera_preprocessing node
 
 
@@ -45,7 +58,9 @@ def main() -> None:
     parser.add_argument("bag", type=Path, help="Path to the rosbag directory")
     parser.add_argument("output", type=Path, help="Output directory of the images")
     parser.add_argument("--every", type=int, default=5, help="Keep every n-th frame")
-    parser.add_argument("--view", choices=["bev", "undistorted"], default="bev")
+    parser.add_argument(
+        "--view", choices=["bev", "undistorted", "parking_bev"], default="bev"
+    )
     parser.add_argument("--topic", default="/camera/image/raw")
     args = parser.parse_args()
 
@@ -53,6 +68,12 @@ def main() -> None:
     calibration.setup()
     distortion = Distortion(calibration)
     birdseye = Birdseye(calibration, distortion)
+    if args.view == "parking_bev":
+        with (PACKAGE_DIR / "config" / "model.yaml").open() as file:
+            config = yaml.safe_load(file)["parking_bev"]
+        parking_birdseye = ParkingBirdseye.from_config(
+            CoordinateTransform(calib=calibration), config
+        )
     bridge = CvBridge()
 
     reader = rosbag2_py.SequentialReader()
@@ -75,6 +96,8 @@ def main() -> None:
             image = distortion.undistort_image(image)
             if args.view == "bev":
                 image = birdseye.transform_img(image)
+            elif args.view == "parking_bev":
+                image = parking_birdseye.warp(image)
 
             cv2.imwrite(str(args.output / f"{args.bag.name}_{index:06d}.png"), image)
             saved += 1

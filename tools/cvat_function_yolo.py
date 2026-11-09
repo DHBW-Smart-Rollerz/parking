@@ -7,7 +7,12 @@ Usage:
         task auto-annotate <task id> \
         --function-file src/parking/tools/cvat_function_yolo.py \
         -p model_path=str:src/parking/models/yolo_pose.pt \
+        [-p image_size=int:864] \
         --conf-threshold 0.3 --allow-unmatched-labels
+
+image_size: Input size of the network (default 640). For images of the parking bird's
+eye view (3 mm/px) with a model trained on the view of camera_preprocessing
+(~2.2 mm/px), use 864, so the parking spots have the same size as in the training.
 """
 
 from __future__ import annotations
@@ -28,13 +33,15 @@ IMAGE_SIZE = 640
 class ParkingSpotFunction:
     """Detection function for cvat-cli."""
 
-    def __init__(self, model_path: str):
+    def __init__(self, model_path: str, image_size: int = IMAGE_SIZE):
         """Loads the trained network.
 
         Args:
             model_path: Path to yolo_pose.pt of the training notebook
+            image_size: Input size of the network
         """
         self.network = YOLO(model_path, task="pose")
+        self.image_size = image_size
         self.spec = cvataa.DetectionFunctionSpec(
             labels=[
                 cvataa.label_spec(name, class_id, type="polygon")
@@ -58,7 +65,7 @@ class ParkingSpotFunction:
         bgr = np.asarray(image.convert("L").convert("RGB"))[:, :, ::-1]
         result = self.network.predict(
             np.ascontiguousarray(bgr),
-            imgsz=IMAGE_SIZE,
+            imgsz=self.image_size,
             conf=context.conf_threshold or DEFAULT_CONF_THRESHOLD,
             verbose=False,
         )[0]
@@ -75,13 +82,14 @@ class ParkingSpotFunction:
         ]
 
 
-def create(model_path: str) -> ParkingSpotFunction:
+def create(model_path: str, image_size: int = IMAGE_SIZE) -> ParkingSpotFunction:
     """Factory called by cvat-cli with the -p parameters.
 
     Args:
         model_path: Path to yolo_pose.pt of the training notebook
+        image_size: Input size of the network
 
     Returns:
         The detection function
     """
-    return ParkingSpotFunction(model_path)
+    return ParkingSpotFunction(model_path, image_size)

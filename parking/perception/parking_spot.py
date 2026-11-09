@@ -5,13 +5,11 @@ from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
 import numpy as np
-from camera_preprocessing.transformation.coordinate_transform import Unit
 
 if TYPE_CHECKING:
     import geometry_msgs.msg
-    from camera_preprocessing.transformation.coordinate_transform import (
-        CoordinateTransform,
-    )
+
+    from parking.perception.view import ImageView
 
 
 @dataclass
@@ -27,32 +25,24 @@ class ParkingSpot:
     corners: np.ndarray
     score: float = 1.0  # Confidence of the detection [0, 1]
     label: str = ""  # Class of the parking spot, e.g. free, occupied, blocked
+    # Shape (4,): the corner lies in the valid image area (not cut off), None: unknown
+    visible: np.ndarray | None = None
 
     @property
     def center(self) -> np.ndarray:
         """Return the center of the parking spot in mm."""
         return self.corners.mean(axis=0)
 
-    def corners_3d(self) -> np.ndarray:
-        """Return the corners as (4, 3) world points on the ground (z = 0)."""
-        return np.hstack([self.corners, np.zeros((len(self.corners), 1))])
-
-    def to_image(
-        self, transform: CoordinateTransform, *, birds_eye: bool = False
-    ) -> np.ndarray:
-        """Project the corners into the image.
+    def to_image(self, view: ImageView) -> np.ndarray | None:
+        """Project the corners into the image of the view.
 
         Args:
-            transform: Coordinate transformation of camera_preprocessing.
-            birds_eye: Project into the bird's eye view instead of the undistorted
-                image.
+            view: View of the image.
 
         Returns:
-            Corners in px with shape (4, 2).
+            Corners in px with shape (4, 2), None if the camera is not calibrated.
         """
-        if birds_eye:
-            return transform.world_to_bird(self.corners_3d(), Unit.MILLIMETERS)
-        return transform.world_to_camera(self.corners_3d(), Unit.MILLIMETERS)
+        return view.world_to_image(self.corners)
 
     def to_global(self, pose: geometry_msgs.msg.Pose) -> np.ndarray:
         """Transform the corners from the vehicle frame into the global pose frame.
