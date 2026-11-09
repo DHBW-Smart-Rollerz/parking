@@ -167,6 +167,9 @@ cython_debug/
 !/data/dataset_v4/
 !/data/dataset_v5/
 !/data/dataset_v6/
+# Datasets in the parking bird's eye view (one folder per CVAT task), without rosbags
+!/data/BEV_PARKING/
+/data/BEV_PARKING/**/metadata.yaml
 
 # Rosbags and archives (e.g. CVAT exports), if copied into the package
 *.mcap
