@@ -13,6 +13,13 @@ Structure of the export:
 One line per parking spot in the label files (all values normalized to [0, 1]):
 
     class cx cy w h x1 y1 v1 x2 y2 v2 x3 y3 v3 x4 y4 v4
+
+Visibility v of a corner:
+    2: in the image area with camera content (visible)
+    1: in the black area of the bird's eye view (outside of the camera's field of
+       view), estimated by the annotator from the lines
+    0: on or outside of the image border, the position is unknown. Ultralytics
+       ignores these corners in the keypoint loss.
 """
 
 from __future__ import annotations
@@ -30,31 +37,71 @@ from parking.perception.network import NUM_CORNERS
 if TYPE_CHECKING:
     from parking.training.dataset import Sample
 
-# Keypoint visibility of YOLO: 2 = labeled and visible
+# Keypoint visibility of YOLO (see module docstring)
 VISIBLE = 2
+ESTIMATED = 1
+UNKNOWN = 0
+# Corners closer than this to the image border (px) count as on the border
+BORDER = 2
+# Size of the erosion of the camera area (px), corners on its edge count as visible
+EDGE = 4
 
 # Corner order after a horizontal flip (bottom-left <-> bottom-right, ...). Only
 # used by Ultralytics if the flip augmentation (fliplr) is enabled.
 FLIP_IDX = [1, 0, 3, 2]
 
 
-def label_line(class_id: int, corners: np.ndarray, image_size: tuple[int, int]) -> str:
+def corner_visibility(corners: np.ndarray, image: np.ndarray) -> list[int]:
+    """Determines the YOLO visibility of the corners (see module docstring).
+
+    Args:
+        corners: Corners in px of the image with shape (4, 2)
+        image: Grayscale image, black (0) outside of the camera's field of view
+
+    Returns:
+        Visibility per corner
+    """
+    height, width = image.shape
+    camera_area = cv2.morphologyEx(
+        (image > 0).astype(np.uint8), cv2.MORPH_CLOSE, np.ones((15, 15), np.uint8)
+    )
+    camera_area = cv2.dilate(camera_area, np.ones((2 * EDGE + 1,) * 2, np.uint8))
+
+    visibility = []
+    for x, y in np.round(corners).astype(int):
+        if not (BORDER <= x < width - BORDER and BORDER <= y < height - BORDER):
+            visibility.append(UNKNOWN)
+        elif camera_area[y, x]:
+            visibility.append(VISIBLE)
+        else:
+            visibility.append(ESTIMATED)
+    return visibility
+
+
+def label_line(
+    class_id: int,
+    corners: np.ndarray,
+    image_size: tuple[int, int],
+    visibility: list[int] | None = None,
+) -> str:
     """Creates the YOLO pose label of one parking spot.
 
     Args:
         class_id: Class of the parking spot
         corners: Corners in px of the image with shape (4, 2)
         image_size: Size of the image (width, height)
+        visibility: Visibility per corner (default: all visible)
 
     Returns:
         Line of the label file
     """
+    visibility = [VISIBLE] * len(corners) if visibility is None else visibility
     points = np.clip(corners / image_size, 0.0, 1.0)
     (x0, y0), (x1, y1) = points.min(axis=0), points.max(axis=0)
     values = [str(class_id)]
     values += [f"{v:.6f}" for v in ((x0 + x1) / 2, (y0 + y1) / 2, x1 - x0, y1 - y0)]
-    for x, y in points:
-        values += [f"{x:.6f}", f"{y:.6f}", str(VISIBLE)]
+    for (x, y), v in zip(points, visibility, strict=True):
+        values += [f"{x:.6f}", f"{y:.6f}", str(v)]
     return " ".join(values)
 
 
@@ -89,7 +136,12 @@ def export_yolo_pose(
 
             shutil.copy2(sample.image_path, image_dir / sample.image_path.name)
             lines = [
-                label_line(spot.class_id, spot.corners, image_size)
+                label_line(
+                    spot.class_id,
+                    spot.corners,
+                    image_size,
+                    corner_visibility(spot.corners, image),
+                )
                 for spot in sample.spots
             ]
             # Images without parking spots get an empty label file (negatives)
